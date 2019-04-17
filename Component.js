@@ -302,6 +302,38 @@ export default class Component {
 
   }
 
+  topBottom(arr){
+
+    let div = document.createElement('div');
+    let button = document.createElement('button');
+    if (arr.name != undefined) {
+      button.className = arr.name;
+    };
+    if (arr.href != undefined) {
+      button.href = arr.href;
+    };
+    if (arr.id != undefined) {
+      button.id = arr.id;
+    };
+    if (arr.value != undefined) {
+      button.innerHTML = arr.value;
+    };
+    button.addEventListener('click',()=>{
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    })
+
+    let  scrollFunction = () =>{
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
+}
+
+    return div.appendChild(button);
+  }
+
   thumbnail(arr) {//paneImage,pathFile,name
 
     let div = document.createElement('div');
