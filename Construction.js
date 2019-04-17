@@ -38,7 +38,7 @@ export default class Construction {
     return nav.appendChild(navb);
   }
 
-
+//Create Footer with links
   Footer(footArr) {
 
     let footer = com.div('div');
@@ -56,7 +56,7 @@ export default class Construction {
 
     return footer.appendChild(foot);
   }
-
+// image gallery
   Carusel(image, path) {
     ;
     let index = 1;
@@ -95,10 +95,7 @@ export default class Construction {
     return div.appendChild(carusel);
   }
 
-  /*  Table() {
-
-  }*/
-
+//This is small card with file or image or text, or file and image and text.
   Card(arr) {
     let div = com.div();
     let card = com.div('card');;
@@ -172,6 +169,7 @@ export default class Construction {
   }
 
 
+// simple form with inputs type text
   Form(index) {
 
     let div = com.div();
@@ -231,8 +229,8 @@ export default class Construction {
     }
     return div.appendChild(form);
   }
-
-  Tablo(arr) {
+//simple table
+  Table(arr) {
     let div = com.div('');
     let table = com.table();
 
@@ -264,7 +262,7 @@ export default class Construction {
     };
     return div.appendChild(table);
   }
-
+// Pagination element in v-0.1 without search form
   Pagination(massive) {
     let index = 0;
 

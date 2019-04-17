@@ -1,6 +1,5 @@
-'use strict';
 const css = document.createElement('link');
-const link = 'main.css';
+const link = '../LibJS/main.css';
 css.setAttribute('href', link);
 css.rel = 'stylesheet';
 
@@ -324,7 +323,7 @@ export default class Component {
   return div.appendChild(a);
 
 }
-ul(arr) {
+ul(arr) { //ul (point or symbol indification) u must write only object
   let div = document.createElement('div');
   let ul = document.createElement('ul');
   let li = document.createElement('li');
@@ -343,7 +342,7 @@ ul(arr) {
   return div.appendChild(ul);
 }
 
-ol(arr) {
+ol(arr) { //ol(number indification) u must use inly object
   let div = document.createElement('div');
   let ol = document.createElement('ol');
   let li = document.createElement('li');
@@ -361,14 +360,5 @@ ol(arr) {
   }
   return div.appendChild(ol);
 }
-/*
-li() {
-  let div = document.createElement('div');
-  if (name != undefined) {
-    tComponent.innerHTML = name
-  };
-  return div.appendChild(li);
-}*/
-
 
 }
