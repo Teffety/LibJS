@@ -329,8 +329,9 @@ export default class Component {
   } else {
     button.style.display = "none";
   }
-}
 
+}
+  scrollFunction();
     return div.appendChild(button);
   }
 
